@@ -1,15 +1,85 @@
 body {
-  background-color: #BCCCE0;
+  background-color: #FFF8F7;
   font-family: 'Raleway', sans-serif;
-}
-
-i {
-  font-size: 65px;
   color: white;
   text-align: center;
 }
-.flag-icon {
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
+
+
+i {
+  font-size: 90px;
+  color: #65B6BC;
+  text-align: center;
+  margin-top: 75px;
+}
+
+form {
+  margin-bottom: 100px;
+}
+
+input.weather-city {
+  border: 0.1rem solid #65B6BC;
+}
+
+h1 {
+  margin-top: 150px;
+}
+
+h6 {
+  padding-bottom: 50px;
+  color: #65B6BC;
+  margin-top: 10px;
+}
+
+h6.5day {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  color: white;
+}
+
+
+input[type='submit'].button-clear {
+  color: #FFF8F7;
+  font-size: 13px;
+}
+
+.form-row {
+  margin-top: 100px;
+}
+
+.left-col {
+  background-color: #F77462;
+}
+
+.mid-col, .right-col {
+  background-color: #FFF8F7;
+}
+
+.results {
+  text-align: center;
+}
+
+.temperature-container {
+  font-size: 5rem;
+  color: #65B6BC;
+  margin-top: 100px;
+}
+
+.forecast {
+  color: red;
+}
+
+.block {
+  display: inline-block;
+  margin-top: 125px;
+}
+
+.fiveDay {
+  color: black;
+  text-transform: uppercase;
 }

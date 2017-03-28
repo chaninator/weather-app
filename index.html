@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/weather-icons.css">
+  <link rel="stylesheet" href="css/milligram.min.css">
   <link rel="stylesheet" href="css/flag-icon.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,32 +16,31 @@
   <main class="weather-app container">
 
     <!-- form row -->
-    <div class="row form-row">
-      <div class="col-md-4 col-md-offset-4">
-        <h1 class="title">Weather App</h1>
+    <div class="main-weather">
+      <div class="row form-row">
+        <div class="col-md-4 left-col">
+          <h1 class="title">Weather App</h1>
 
-        <form class="getWeatherData">
-          <input type="text" class="weather-city" placeholder="Enter a city.." />
-          <input type="submit" value="Get Weather">
-          <p class="city-error" style="display:none;">Whoops! Looks like that city doesn't exist, try another one.</p>
-        </form>
+          <form class="getWeatherData text-center">
+            <input type="text" class="weather-city" placeholder="enter a city">
+            <input class="button button-clear btn-submit" type="submit" value="Get Weather">
 
-      </div>
-    </div>
+          </form>
 
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4 results">
-        <span><i class="wi"></i></span>
-        <span class="flag-icon"></span>
-        <h2 class="results-city"></h2>
-
-
-        <div class="temperature-container">
-          <span class="temperature-label"><strong>Temperature: </strong></span>
-          <span class="temperature"></span>
         </div>
 
-        <div class="humidity-container">
+
+        <div class="col-md-4 results mid-col">
+          <h6 class="results-city"></h6>
+          <span><i id="wi"></i></span>
+
+
+          <div class="temperature-container">
+            <span class="temperature-label"></span>
+            <span class="temperature"></span>
+          </div>
+
+          <!-- <div class="humidity-container">
           <span class="humidity-label"><strong>Humidity: </strong></span>
           <span class="humidity"></span>
         </div>
@@ -48,8 +48,17 @@
         <div class="description-container">
           <span class="description-label"></span>
           <span class="description"></span>
+        </div> -->
+
         </div>
 
+        <div class="col-md-4 results right-col">
+          <h2 class="fiveDay">5 day</h2>
+          <div class="container">
+            <div class="forecast">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
