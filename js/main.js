@@ -81,7 +81,7 @@ $(document).ready(function() {
       url: 'http://api.openweathermap.org/data/2.5/forecast/daily',
       data: {
         q: location,
-        units: 'metric',
+        units: 'imperial',
         appid: apiKey,
         cnt: '5'
       }
@@ -105,9 +105,6 @@ $(document).ready(function() {
         // <h5 id='min'>" + Math.round(response.list[i].temp.min) + 'º' + "</h5>
 
         $('.forecast').append(arr.join(' '));
-
-        
-
       }
     });
   }
